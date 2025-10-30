@@ -1,15 +1,14 @@
 name: Task Template
 description: Create a new task for the project
 title: "Scope - task name"
-labels: 
+labels: []  # Empty array for labels
 body:
   - type: markdown
     attributes:
       value: |
         Thanks for taking the time to create a task! Please fill out the information below.
- 
- 
- - type: textarea
+
+  - type: textarea
     id: description
     attributes:
       label: Description
@@ -17,9 +16,9 @@ body:
       placeholder: |
         Please include:
         What? 
-       - Objectives that needsto be done
-       - Any specific requirements or constraints
-       
+        - Objectives that needs to be done
+        - Any specific requirements or constraints
+        
         Why?
         - Why it's needed
 
@@ -27,18 +26,16 @@ body:
         - Targeted audiences for this task
 
         How? 
-        - Which methodology will be used ? 
+        - Which methodology will be used? 
 
         Where? 
         - Where do we handle this task
 
         When? 
-        
     validations:
-      required: true 
+      required: true
 
-
-        - type: textarea
+  - type: textarea
     id: todo-list
     attributes:
       label: To-do list
@@ -49,4 +46,3 @@ body:
         - [ ] Task 3
     validations:
       required: true
-
