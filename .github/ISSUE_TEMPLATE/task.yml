@@ -13,25 +13,33 @@ body:
     attributes:
       label: Description
       description: Provide a detailed description of the task
-      placeholder: |
-        Please include:
-        What? 
-        - Objectives that needs to be done
-        - Any specific requirements or constraints
+      value: |
+        ## What? 
+        - Objectives that needs to be done:
+          - 
+        - Requirements or constraints:
+          - 
         
-        Why?
-        - Why it's needed
+        ## Why?
+        - Why it's needed:
+          - 
 
-        Who? 
-        - Targeted audiences for this task
+        ## Who? 
+        - Targeted audiences for this task:
+          - 
 
-        How? 
-        - Which methodology will be used? 
+        ## How? 
+        - Methodology to be used:
+          - 
 
-        Where? 
-        - Where do we handle this task
+        ## Where? 
+        - Where we handle this task:
+          - 
 
-        When? 
+        ## When? 
+        - Timeline/Deadline:
+          - 
+      placeholder: Please fill in the details under each section
     validations:
       required: true
 
@@ -40,9 +48,16 @@ body:
     attributes:
       label: To-do list
       description: List the actions that must be met for this task to be considered complete
-      placeholder: |
-        - [ ] Task 1
-        - [ ] Task 2
-        - [ ] Task 3
+      value: |
+        - [ ] Planning Phase
+          - [ ] Define requirements
+          - [ ] Create timeline
+        - [ ] Implementation Phase
+          - [ ] Task implementation
+          - [ ] Review implementation
+        - [ ] Testing Phase
+          - [ ] Test functionality
+          - [ ] Document results
+      placeholder: Add or modify tasks as needed
     validations:
       required: true
