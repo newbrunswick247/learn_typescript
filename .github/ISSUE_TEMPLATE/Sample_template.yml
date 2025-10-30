@@ -1,4 +1,4 @@
-name: Task Template
+name: Sample Template
 description: Create a new task for the project
 title: "[TASK]: "
 labels: ["task"]
