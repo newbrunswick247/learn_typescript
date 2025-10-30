@@ -1,0 +1,94 @@
+name: Task Template
+description: Create a new task for the project
+title: "[TASK]: "
+labels: ["task"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to create a task! Please fill out the information below.
+
+  - type: input
+    id: task-summary
+    attributes:
+      label: Task Summary
+      description: A brief, clear summary of what needs to be done
+      placeholder: "Implement user authentication feature"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Detailed Description
+      description: Provide a detailed description of the task
+      placeholder: |
+        Please include:
+        - What needs to be done
+        - Why it's needed
+        - Any specific requirements or constraints
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: Select the priority level for this task
+      options:
+        - High
+        - Medium
+        - Low
+    validations:
+      required: true
+
+  - type: input
+    id: estimated-time
+    attributes:
+      label: Estimated Time
+      description: Estimated time to complete this task
+      placeholder: "e.g., 2 days, 4 hours"
+    validations:
+      required: false
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      description: List the criteria that must be met for this task to be considered complete
+      placeholder: |
+        - [ ] Criterion 1
+        - [ ] Criterion 2
+        - [ ] Criterion 3
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Add any other context, references, or screenshots about the task here
+    validations:
+      required: false
+
+  - type: dropdown
+    id: status
+    attributes:
+      label: Current Status
+      description: Select the current status of this task
+      options:
+        - Not Started
+        - In Progress
+        - Blocked
+        - Ready for Review
+    validations:
+      required: true
+
+  - type: input
+    id: dependencies
+    attributes:
+      label: Dependencies
+      description: List any dependencies or related issues
+      placeholder: "#123, #456"
+    validations:
+      required: false
