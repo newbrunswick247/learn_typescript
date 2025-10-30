@@ -1,3 +1,14 @@
+name: Task Template
+description: Create a new task for the project
+title: Scope - task name
+labels: 
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to create a task! Please fill out the information below.
+ 
+ 
  - type: textarea
     id: description
     attributes:
@@ -5,9 +16,24 @@
       description: Provide a detailed description of the task
       placeholder: |
         Please include:
-        - What needs to be done
+        What? 
+       - Objectives that needsto be done
+       - Any specific requirements or constraints
+       
+        Why?
         - Why it's needed
-        - Any specific requirements or constraints
+
+        Who? 
+        - Targeted audiences for this task
+
+        How? 
+        - Which methodology will be used ? 
+
+        Where? 
+        - Where do we handle this task
+
+        When? 
+        
     validations:
       required: true 
 
@@ -16,7 +42,7 @@
     id: todo-list
     attributes:
       label: To-do list
-      description: List the criteria that must be met for this task to be considered complete
+      description: List the actions that must be met for this task to be considered complete
       placeholder: |
         - [ ] Task 1
         - [ ] Task 2
