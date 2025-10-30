@@ -1,7 +1,7 @@
  - type: textarea
     id: description
     attributes:
-      label: Detailed Description
+      label: Description
       description: Provide a detailed description of the task
       placeholder: |
         Please include:
@@ -9,4 +9,18 @@
         - Why it's needed
         - Any specific requirements or constraints
     validations:
+      required: true 
+
+
+        - type: textarea
+    id: todo-list
+    attributes:
+      label: To-do list
+      description: List the criteria that must be met for this task to be considered complete
+      placeholder: |
+        - [ ] Task 1
+        - [ ] Task 2
+        - [ ] Task 3
+    validations:
       required: true
+
