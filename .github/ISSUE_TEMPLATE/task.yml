@@ -1,6 +1,6 @@
 name: Task Template
 description: Create a new task for the project
-title: Scope - task name
+title: "Scope - task name"
 labels: 
 body:
   - type: markdown
