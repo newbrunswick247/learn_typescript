@@ -1,0 +1,12 @@
+ - type: textarea
+    id: description
+    attributes:
+      label: Detailed Description
+      description: Provide a detailed description of the task
+      placeholder: |
+        Please include:
+        - What needs to be done
+        - Why it's needed
+        - Any specific requirements or constraints
+    validations:
+      required: true
